@@ -1,2 +1,2 @@
-# mightymich.giyhub.io
+# mightymich.github.io
 a oficial site
