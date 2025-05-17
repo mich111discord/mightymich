@@ -1,0 +1,144 @@
+```
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Moje Bio</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    background-color: rgba(255 255 255 / 0.1);
+    border-radius: 16px;
+    box-shadow:
+      0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 480px;
+    width: 90%;
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  img.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  img.avatar:hover {
+    transform: scale(1.05);
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin: 0 0 0.25rem 0;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #dcdcdc;
+    margin-bottom: 1.75rem;
+  }
+  p.bio-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e1e1e1;
+    margin-bottom: 2.5rem;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+  }
+  .socials a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(255 255 255 / 0.2);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .socials a:hover {
+    background-color: #fff;
+    color: #2575fc;
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    .bio-text {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    <img src="https://avatars.githubusercontent.com/u/141028293?v=4" alt="Avatar użytkownika" class="avatar" />
+    <h1>Jan Kowalski</h1>
+    <h2>pasjonat linuxa i windowsa.</h2>
+    <p class="bio-text">
+      siema to moja nowa strona gluten morgen widzu🗿.
+    </p>
+    <div class="socials" aria-label="Linki do mediów społecznościowych">
+      <a href="https://github.com/mich111discord" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path d="M12 0C5.373 0 0 5.373 0 12a12 12 0 008.21 11.445c.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 17.23 3.633 16.9 3.633 16.9c-1.09-.745.085-.73.085-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.83 2.806 1.3 3.492.993.11-.773.418-1.3.76-1.6-2.665-.304-5.466-1.334-5.466-5.936 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.53.117-3.187 0 0 1.01-.323 3.3 1.23a11.5 11.5 0 013-.404c1.02.005 2.045.138 3 .405 2.29-1.554 3.297-1.23 3.297-1.23.655 1.657.244 2.883.12 3.186.77.84 1.232 1.91 1.232 3.22 0 4.614-2.807 5.628-5.48 5.928.43.372.813 1.104.813 2.228 0 1.609-.015 2.906-.015 3.302 0 .319.216.694.825.577A12 12 0 0024 12c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@mich1112mc" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M23.497 6.186a2.969 2.969 0 00-2.088-2.096C19.227 3.5 12 3.5 12 3.5s-7.227 0-9.409.59a2.968 2.968 0 00-2.088 2.096A30.03 30.03 0 000 12a30.03 30.03 0 00.503 5.814 2.969 2.969 0 002.088 2.096C4.773 20.5 12 20.5 12 20.5s7.227 0 9.409-.59a2.969 2.969 0 002.088-2.096A30.03 30.03 0 0024 12a30.03 30.03 0 00-.503-5.814zM9.75 15.02v-6.06l5.18 3.03-5.18 3.03z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@mich1112mc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M12.002 3.952v9.257a2.52 2.52 0 01-1.47-.512 2.5 2.5 0 01-.823-1.885 2.6 2.6 0 01.01-.072l3.096 1.79V5.504a5.46 5.46 0 003.868 1.722v3.026a8.47 8.47 0 01-5.63-2.3z"/><path d="M14.955 22.726a7.828 7.828 0 01-8.2-7.898 7.79 7.79 0 01.02-.378 1.71 1.71 0 01-.517-1.192 1.724 1.724 0 011.722-1.722 1.714 1.714 0 001.536 1.952 4.464 4.464 0 008.356-.743v3.268a7.865 7.865 0 01-3.66 4.813z"/></svg>
+      </a>
+      <a href="https://t.me/+sgjGW9ZzhRs5OTI0" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M21.56 2.779a1.337 1.337 0 00-1.833-.708L2.63 9.627a1 1 0 00-.09 1.812l5.11 3.327 1.92 5.876a.75.75 0 001.228.348l7.24-9.72a1.336 1.336 0 00-.567-2.57 1.31 1.31 0 00-.056-.167zM9.19 15.676L7.86 13.87l8.106-5.99-6.776 7.795z"/></svg>
+      </a>
+      <a href="https://discord.gg/amq5w9Vq9p" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.249a18.34 18.34 0 00-5.487 0 12.191 12.191 0 00-.616-1.249.077.077 0 00-.078-.037 19.736 19.736 0 00-4.886 1.515.069.069 0 00-.031.027C2.13 9.045 1.245 13.579 1.5 18.057a.082.082 0 00.031.056 20.066 20.066 0 006.065 3.089.077.077 0 00.084-.027c.47-.636.889-1.31 1.248-2.02a.076.076 0 00-.041-.105 12.82 12.82 0 01-1.8-.847.077.077 0 01-.007-.127c.122-.093.245-.192.363-.291a.074.074 0 01.077-.01c3.765 1.72 7.849 1.72 11.59 0a.073.073 0 01.078.009c.12.1.243.199.365.292a.076.076 0 01-.006.127 12.84 12.84 0 01-1.801.847.076.076 0 00-.04.105c.36.708.78 1.382 1.25 2.018a.076.076 0 00.084.028 20.159 20.159 0 006.066-3.088.076.076 0 00.03-.055c.5-5.177-.838-9.673-3.548-13.661a.061.061 0 00-.03-.028zM8.02 15.331c-1.182 0-2.153-1.085-2.153-2.419 0-1.333.955-2.418 2.153-2.418 1.21 0 2.175 1.1 2.153 2.418 0 1.334-.955 2.42-2.153 2.42zm7.974 0c-1.182 0-2.153-1.085-2.153-2.419 0-1.333.955-2.418 2.153-2.418 1.21 0 2.175 1.1 2.153 2.418 0 1.334-.944 2.42-2.153 2.42z"/></svg>
+      </a>
+      <a href="mailto:MightyMichpl@protonmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4v-9.27l8 6.364 8-6.364V18z"/></svg>
+      </a>
+      <a href="https://tipply.pl/@mich1112" target="_blank" rel="noopener noreferrer" aria-label="Tipplly">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M21.644 3.396L12.53 14.33l-3.866-4.812 9.083-6.234zM5.75 2.224L.004 23.996l10.721-7.781 3.965 5.423-6.55-16.18z"/></svg>
+      </a>
+      <a href="https://www.reddit.com/user/DeliciousFactor9980/" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M21.588 10.21c.302 0 .55.25.55.55 0 .305-.26.55-.55.55-.3 0-.55-.244-.55-.55 0-.3.247-.55.55-.55zM8.473 14.504c0 .957.962 1.734 2.178 1.734 1.204 0 2.178-.777 2.178-1.734 0-.956-.974-1.734-2.178-1.734-1.216 0-2.178.778-2.178 1.734zm2.512-8.163c.912 0 1.653.75 1.653 1.678a1.677 1.677 0 11-3.305 0c0-.928.74-1.678 1.653-1.678zm7.227 5.196l-2.42-4.527-3.86.937a3.207 3.207 0 00-.606-.058c-.327 0-.647.072-.938.2l-3.877-.94-2.427 4.518-2.3-.442v2.617l4.123.79a6.334 6.334 0 001.222 2.533c.203.3.33.59.48.78 0 0-.03.375-.04.581-.02.375-.42.588-.42.588a4.83 4.83 0 005.85 0s-.404-.227-.425-.582c-.01-.208-.038-.59-.038-.59a3.565 3.565 0 00.556-.712 6.159 6.159 0 001.112-2.599l4.096-.776v-2.617l-2.251.441z"/></svg>
+      </a>
+      <a href="https://x.com/mich1112mc/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 4.57a10.006 10.006 0 01-2.825.775 4.93 4.93 0 002.165-2.723c-.95.564-2.005.974-3.127 1.195A4.916 4.916 0 0016.616 3c-2.724 0-4.93 2.208-4.93 4.93 0 .386.044.763.127 1.124-4.094-.206-7.719-2.164-10.143-5.144-.423.726-.666 1.562-.666 2.457 0 1.697.864 3.193 2.176 4.07a4.904 4.904 0 01-2.229-.616v.06c0 2.37 1.685 4.346 3.918 4.796a4.907 4.907 0 01-2.224.085 4.936 4.936 0 004.604 3.417 9.865 9.865 0 01-6.096 2.1c-.395 0-.79-.023-1.175-.068a13.936 13.936 0 007.548 2.209c9.054 0 14.002-7.511 14.002-14.002 0-.214-.005-.426-.015-.637A9.985 9.985 0 0024 4.59z"/></svg>
+      </a>
+      <a href="https://pl.pinterest.com/mich1112_orginal/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M12.31 2c-4.675 0-7.473 3.468-7.473 6.512 0 1.565.606 2.83 1.892 3.132.215.08.347.02.399-.147.038-.133.12-.56.16-.76.053-.27.034-.352-.116-.584-.397-.662-.647-1.515-.647-2.485 0-3.262 2.457-6.045 6.565-6.045 3.56 0 5.63 2.06 5.63 4.81 0 3.607-1.6 6.693-3.965 6.693-1.257 0-2.2-1.045-1.923-2.32.37-1.492 1.086-3.105 1.086-4.186 0-.967-.522-1.784-1.598-1.784-1.23 0-2.22 1.265-2.22 2.966 0 1.078.37 1.804.37 1.804l-1.42 6.033c-.406 1.718-.06 3.83-.028 4.045.007.074.11.09.154.036.064-.074.882-1.14 1.165-2.182.08-.29.488-1.867.488-1.867.25.474.983.897 1.776.897 2.333 0 3.915-2.24 3.915-5.214 0-2.71-1.83-4.61-4.577-4.61z"/></svg>
+      </a>
+      <a href="https://medal.tv/pl/u/MightyMich?invite=ur-MSxRU2QsMzU3Mjk2NjQ0" target="_blank" rel="noopener noreferrer" aria-label="Medal.tv">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 1010 10A10.012 10.012 0 0012 2zm3.535 16.95l-4.243-4.243 1.414-1.414 2.829 2.828 5.657-5.657 1.414 1.414z"/></svg>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+```
